@@ -18,7 +18,7 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        System.out.println( ANSI_BLUE + "Application Name " + appName + ANSI_RESET);
+        System.out.println( ANSI_BLUE + "Application Name " + appName + ANSI_RESET + "\n");
         return ANSI_BLUE + "Application Name " + appName + ANSI_RESET;
     }
 }

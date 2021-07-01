@@ -3,8 +3,8 @@
   "kind" : "Service",
   "metadata" : {
     "annotations" : {
-      "app.quarkus.io/commit-id" : "5b3bea203964a9cfd54ec1dc89c1679601a59869",
-      "app.quarkus.io/build-timestamp" : "2021-07-01 - 01:24:45 +0000"
+      "app.quarkus.io/commit-id" : "0f412736fd026e7847a7b00331c0019411cf018e",
+      "app.quarkus.io/build-timestamp" : "2021-07-01 - 01:54:05 +0000"
     },
     "labels" : {
       "app.kubernetes.io/name" : "openshift-quarkus-ab",
@@ -29,12 +29,12 @@
   "kind" : "Deployment",
   "metadata" : {
     "annotations" : {
-      "app.quarkus.io/commit-id" : "5b3bea203964a9cfd54ec1dc89c1679601a59869",
-      "app.quarkus.io/build-timestamp" : "2021-07-01 - 01:24:45 +0000"
+      "app.quarkus.io/commit-id" : "0f412736fd026e7847a7b00331c0019411cf018e",
+      "app.quarkus.io/build-timestamp" : "2021-07-01 - 01:54:05 +0000"
     },
     "labels" : {
-      "app.kubernetes.io/version" : "1.0.0-SNAPSHOT",
-      "app.kubernetes.io/name" : "openshift-quarkus-ab"
+      "app.kubernetes.io/name" : "openshift-quarkus-ab",
+      "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
     },
     "name" : "openshift-quarkus-ab"
   },
@@ -42,19 +42,19 @@
     "replicas" : 1,
     "selector" : {
       "matchLabels" : {
-        "app.kubernetes.io/version" : "1.0.0-SNAPSHOT",
-        "app.kubernetes.io/name" : "openshift-quarkus-ab"
+        "app.kubernetes.io/name" : "openshift-quarkus-ab",
+        "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
       }
     },
     "template" : {
       "metadata" : {
         "annotations" : {
-          "app.quarkus.io/commit-id" : "5b3bea203964a9cfd54ec1dc89c1679601a59869",
-          "app.quarkus.io/build-timestamp" : "2021-07-01 - 01:24:45 +0000"
+          "app.quarkus.io/commit-id" : "0f412736fd026e7847a7b00331c0019411cf018e",
+          "app.quarkus.io/build-timestamp" : "2021-07-01 - 01:54:05 +0000"
         },
         "labels" : {
-          "app.kubernetes.io/version" : "1.0.0-SNAPSHOT",
-          "app.kubernetes.io/name" : "openshift-quarkus-ab"
+          "app.kubernetes.io/name" : "openshift-quarkus-ab",
+          "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
         }
       },
       "spec" : {

@@ -4,8 +4,8 @@ kind: Service
 metadata:
   annotations:
     app.openshift.io/vcs-url: <<unknown>>
-    app.quarkus.io/commit-id: 5b3bea203964a9cfd54ec1dc89c1679601a59869
-    app.quarkus.io/build-timestamp: 2021-07-01 - 01:24:45 +0000
+    app.quarkus.io/commit-id: 0f412736fd026e7847a7b00331c0019411cf018e
+    app.quarkus.io/build-timestamp: 2021-07-01 - 01:54:05 +0000
   labels:
     app.kubernetes.io/name: openshift-quarkus-ab
     app.kubernetes.io/version: 1.0.0-SNAPSHOT
@@ -35,11 +35,11 @@ kind: ImageStream
 metadata:
   annotations:
     app.openshift.io/vcs-url: <<unknown>>
-    app.quarkus.io/commit-id: 5b3bea203964a9cfd54ec1dc89c1679601a59869
-    app.quarkus.io/build-timestamp: 2021-07-01 - 01:24:45 +0000
+    app.quarkus.io/commit-id: 0f412736fd026e7847a7b00331c0019411cf018e
+    app.quarkus.io/build-timestamp: 2021-07-01 - 01:54:05 +0000
   labels:
-    app.kubernetes.io/name: openshift-quarkus-ab
     app.kubernetes.io/version: 1.0.0-SNAPSHOT
+    app.kubernetes.io/name: openshift-quarkus-ab
     app.openshift.io/runtime: quarkus
   name: openshift-quarkus-ab
   namespace: quarkus-ab
@@ -50,11 +50,11 @@ kind: BuildConfig
 metadata:
   annotations:
     app.openshift.io/vcs-url: <<unknown>>
-    app.quarkus.io/commit-id: 5b3bea203964a9cfd54ec1dc89c1679601a59869
-    app.quarkus.io/build-timestamp: 2021-07-01 - 01:24:45 +0000
+    app.quarkus.io/commit-id: 0f412736fd026e7847a7b00331c0019411cf018e
+    app.quarkus.io/build-timestamp: 2021-07-01 - 01:54:05 +0000
   labels:
-    app.kubernetes.io/name: openshift-quarkus-ab
     app.kubernetes.io/version: 1.0.0-SNAPSHOT
+    app.kubernetes.io/name: openshift-quarkus-ab
     app.openshift.io/runtime: quarkus
   name: openshift-quarkus-ab
   namespace: quarkus-ab
@@ -76,28 +76,28 @@ kind: DeploymentConfig
 metadata:
   annotations:
     app.openshift.io/vcs-url: <<unknown>>
-    app.quarkus.io/commit-id: 5b3bea203964a9cfd54ec1dc89c1679601a59869
-    app.quarkus.io/build-timestamp: 2021-07-01 - 01:24:45 +0000
+    app.quarkus.io/commit-id: 0f412736fd026e7847a7b00331c0019411cf018e
+    app.quarkus.io/build-timestamp: 2021-07-01 - 01:54:05 +0000
   labels:
-    app.kubernetes.io/name: openshift-quarkus-ab
     app.kubernetes.io/version: 1.0.0-SNAPSHOT
+    app.kubernetes.io/name: openshift-quarkus-ab
     app.openshift.io/runtime: quarkus
   name: openshift-quarkus-ab
   namespace: quarkus-ab
 spec:
   replicas: 1
   selector:
-    app.kubernetes.io/name: openshift-quarkus-ab
     app.kubernetes.io/version: 1.0.0-SNAPSHOT
+    app.kubernetes.io/name: openshift-quarkus-ab
   template:
     metadata:
       annotations:
         app.openshift.io/vcs-url: <<unknown>>
-        app.quarkus.io/commit-id: 5b3bea203964a9cfd54ec1dc89c1679601a59869
-        app.quarkus.io/build-timestamp: 2021-07-01 - 01:24:45 +0000
+        app.quarkus.io/commit-id: 0f412736fd026e7847a7b00331c0019411cf018e
+        app.quarkus.io/build-timestamp: 2021-07-01 - 01:54:05 +0000
       labels:
-        app.kubernetes.io/name: openshift-quarkus-ab
         app.kubernetes.io/version: 1.0.0-SNAPSHOT
+        app.kubernetes.io/name: openshift-quarkus-ab
         app.openshift.io/runtime: quarkus
       namespace: quarkus-ab
     spec:
