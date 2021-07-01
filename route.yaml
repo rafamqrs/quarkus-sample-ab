@@ -1,0 +1,25 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    haproxy.router.openshift.io/balance: roundrobin
+    openshift.io/host.generated: "true"
+  labels:
+    app: quarkus-a
+    app.kubernetes.io/component: quarkus-a
+    app.kubernetes.io/instance: quarkus-a
+  name: quarkus-a
+  namespace: quarkus-ab
+spec:
+  alternateBackends:
+  - kind: Service
+    name: quarkus-b
+    weight: 0
+  host: quarkus-a-quarkus-ab.apps.cluster-b596.b596.example.opentlc.com
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: quarkus-a
+    weight: 100
+  wildcardPolicy: None
